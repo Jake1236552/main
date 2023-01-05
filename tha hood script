@@ -49,7 +49,7 @@ ThaTab:AddButton({
 })
 
 ThaTab:AddToggle({
-	Name = "Auto-Max Armor : $3200 Per Refill",
+	Name = "Auto-Max Armor",
 	Default = false,
 	Callback = function(Value)
 		getgenv().autoarmor = Value
