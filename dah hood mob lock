@@ -1,0 +1,30 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Mini hub (Mob version)", "BloodTheme")
+
+--tabs
+
+local MainTab = Window:NewTab("Testing")
+
+local MiscTab = Window:NewTab("Misc")
+
+-- sections
+
+local MainSection = MainTab:NewSection("I like cock")
+
+local MiscSection = MiscTab:NewSection("Misc")
+
+-- scripts
+
+MainSection:NewButton("Fake macro", "C to toggle", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/Zk7tY25L"))()
+end)
+
+MainSection:NewButton("Aimlock", "Aimlock", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/u7Arg1b9"))()
+end)
+
+-- misc scripts
+
+MiscSection:NewButton("Keyboard script", "Keyboard script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+end)
